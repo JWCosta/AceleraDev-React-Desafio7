@@ -12,14 +12,14 @@ const UserPosts = ({ posts }) => (
       ) : (
         <div className="no-posts">
           <span className="no-posts__content">
-            Infelizment este usuário não possui publicações
+            Infelizmente este usuário não possui publicações
           </span>
           <span
             className="no-posts__emoji"
             role="img"
-            aria-label="Emoji Triste"
+            aria-label="Coração Partido"
           >
-            😥
+            💔
           </span>
         </div>
       )}
