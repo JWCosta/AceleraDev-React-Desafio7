@@ -2,8 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const User = ({ infoUser }) => {
-  const { avatar, name, username } = infoUser;
+const User = ({ detailsUser }) => {
+  const { avatar, name, username } = detailsUser;
 
   return (
     <article className="post" data-testid="user">

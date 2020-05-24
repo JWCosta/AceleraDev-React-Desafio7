@@ -9,7 +9,7 @@ const UsersList = ({ users }) => {
   return (
     <section className="users-list" data-testid="users-list">
       {users.length > 0 ? (
-        users.map((user) => <User key={user.id} infoUser={user} />)
+        users.map((user) => <User key={user.id} detailsUser={user} />)
       ) : (
         <Loading />
       )}

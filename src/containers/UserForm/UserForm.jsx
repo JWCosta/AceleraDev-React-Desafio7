@@ -5,10 +5,10 @@ import SuccessMessage from "../../components/SuccessMessage";
 import "./UserForm.scss";
 
 const UserForm = () => {
-  const [name, setName] = useState("John Doe");
+  const [name, setName] = useState("Meu Usuário");
   const [avatar, setAvatar] = useState("");
-  const [username, setUsername] = useState("johndoe");
-  const [email, setEmail] = useState("johndoe@gmail.com");
+  const [username, setUsername] = useState("user");
+  const [email, setEmail] = useState("user@gmail.com");
   const [submit, setSubmit] = useState(false);
 
   const handleSetName = (event) => {
@@ -89,7 +89,7 @@ const UserForm = () => {
             <input
               type="text"
               value={name}
-              placeholder="Ex: Fulano da Silva"
+              placeholder="Ex: Usuário de tal"
               onChange={(event) => handleSetName(event)}
             />
 
@@ -97,7 +97,7 @@ const UserForm = () => {
             <input
               type="text"
               value={username}
-              placeholder="Ex: fulano_da_silva"
+              placeholder="Ex: my_user"
               onChange={(event) => handleSetUserName(event)}
             />
 
@@ -105,7 +105,7 @@ const UserForm = () => {
             <input
               type="email"
               value={email}
-              placeholder="Ex: fulano@provedor.com"
+              placeholder="Ex: meuemail@email.com"
               onChange={(event) => handleSetEmail(event)}
             />
 
